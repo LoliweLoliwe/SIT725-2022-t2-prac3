@@ -7,7 +7,9 @@
         <meta name="viewpoint" content="width-device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style2.css">
+       
     </head>
     <body>
         <nav>
@@ -29,12 +31,12 @@
                 <img class="materialboxed materialboxed-image" src="home.png">
               </div>
               <div class="col s12 center-align">
-                <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton" data-target="modal1"><i class="material-icons left">X</i>Click Me</a>
+                <a class="waves-effect waves-light btn click-me-button" id="clickMeButton" data-modal="#modal"><i class="material-icons left">auto_fix_high</i>Click Me</a>
               </div>
             </div>
-            <div class="row">
+            <div class="row" id="card-section">
               <div class="col s4 center-align">
-                <div class="card">
+                <div class="card medium">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="relaxing.jpg">
                   </div>
@@ -44,14 +46,14 @@
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">ngu'Mjita lo<i class="material-icons right">close</i></span>
-                    <p class="card-text">Hello There! I just wanted to say HI to you guys. See ya!</p>
+                    <p class="card-text card-desc-color">Hello There! I just wanted to say HI to you guys. See ya!</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
                     <!-- Modal Structure -->
-      <div id="modal1" class="modal modal-fixed-footer">
+      <div id="modal" class="modal modal-fixed-footer">
         <div class="row modal-content">
           <form class="col s12">
             <div class="row">
@@ -87,8 +89,9 @@
 
         </main>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <!-- Compiled and minified JavaScript -->
+                      <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="script2.js"></script>   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+      <script src="script2.js"></script> 
     </body>
 </html>
